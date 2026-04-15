@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zakariae Hafidi — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    color: #1a1a2e;
+    background: #f0ede8;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    display: grid;
+    grid-template-columns: 68mm 1fr;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+  }
+  .left {
+    background: #1a3a2a;
+    color: white;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .photo-wrap { display: flex; justify-content: center; }
+  .photo-wrap img {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    object-fit: cover; object-position: top center;
+    border: 3px solid #a8c5a0;
+  }
+  .name-block { text-align: center; }
+  .cv-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: white; line-height: 1.2;
+  }
+  .cv-title {
+    font-size: 0.72rem; color: #a8c5a0;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    margin-top: 0.4rem; font-weight: 500;
+  }
+  .left-section-title {
+    font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #a8c5a0;
+    border-bottom: 1px solid rgba(168,197,160,0.3);
+    padding-bottom: 0.4rem; margin-bottom: 0.9rem;
+  }
+  .contact-item {
+    display: flex; align-items: flex-start;
+    gap: 0.6rem; margin-bottom: 0.6rem;
+    font-size: 0.78rem; color: #d4e8d4; line-height: 1.4;
+  }
+  .contact-icon { color: #a8c5a0; font-size: 0.8rem; margin-top: 1px; flex-shrink: 0; }
+  .skill-item { margin-bottom: 0.7rem; }
+  .skill-name { font-size: 0.78rem; color: #d4e8d4; margin-bottom: 0.25rem; }
+  .skill-bar { height: 2px; background: rgba(255,255,255,0.12); border-radius: 1px; }
+  .skill-fill { height: 100%; background: #a8c5a0; border-radius: 1px; }
+  .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+  .lang-name { font-size: 0.78rem; color: #d4e8d4; }
+  .lang-dots { display: flex; gap: 3px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(168,197,160,0.3); }
+  .dot.filled { background: #a8c5a0; }
+  .interest-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .interest-tag {
+    padding: 0.2rem 0.6rem;
+    background: rgba(168,197,160,0.15);
+    border: 1px solid rgba(168,197,160,0.3);
+    border-radius: 2px; font-size: 0.7rem; color: #d4e8d4;
+  }
+  .right { padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1.6rem; }
+  .right-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; font-weight: 700;
+    color: #1a3a2a;
+    border-bottom: 2px solid #a8c5a0;
+    padding-bottom: 0.3rem; margin-bottom: 1rem;
+  }
+  .summary-text { font-size: 0.82rem; color: #444; line-height: 1.7; font-weight: 300; }
+  .summary-text strong { color: #1a3a2a; font-weight: 600; }
+  .entry { margin-bottom: 1rem; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.2rem; }
+  .entry-title { font-size: 0.85rem; font-weight: 600; color: #1a3a2a; }
+  .entry-date { font-size: 0.72rem; color: #5a8a5a; font-weight: 600; letter-spacing: 0.05em; white-space: nowrap; margin-left: 0.5rem; }
+  .entry-org { font-size: 0.78rem; color: #666; margin-bottom: 0.35rem; font-style: italic; }
+  .entry-badge {
+    display: inline-block; padding: 0.1rem 0.5rem;
+    background: rgba(168,197,160,0.2); color: #2a6a2a;
+    font-size: 0.68rem; font-weight: 600; border-radius: 2px;
+    margin-bottom: 0.35rem; letter-spacing: 0.05em;
+  }
+  .entry-bullets { list-style: none; padding: 0; }
+  .entry-bullets li {
+    font-size: 0.78rem; color: #555;
+    padding-left: 0.9rem; position: relative;
+    margin-bottom: 0.2rem; line-height: 1.5; font-weight: 300;
+  }
+  .entry-bullets li::before { content: '—'; position: absolute; left: 0; color: #a8c5a0; font-size: 0.7rem; }
+  @media print { body { background: white; padding: 0; } .page { box-shadow: none; width: 100%; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <!-- GAUCHE -->
+  <div class="left">
+    <div class="photo-wrap">
+      <img src="photo.jpg" alt="Zakariae Hafidi">
+    </div>
+    <div class="name-block">
+      <div class="cv-name">Zakariae<br>Hafidi</div>
+      <div class="cv-title">Étudiant ingénieur · N7</div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Contact</div>
+      <div class="contact-item"><span class="contact-icon">✉</span> hafidizakaria811@gmail.com</div>
+      <div class="contact-item"><span class="contact-icon">☎</span> +33 07 58 10 45 25</div>
+      <div class="contact-item"><span class="contact-icon">⌂</span> Appt 31, 8 Chemin Tricou, Toulouse 31200</div>
+      <div class="contact-item"><span class="contact-icon">◉</span> Nationalité marocaine</div>
+    </div>
+
+      <div class="left-section">
+      <div class="left-section-title">Programmation</div>
+      <div class="skill-item"><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Java & ADA</div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">C</div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">SQL</div><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">MATLAB</div><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Analyse de données</div>
+      <div class="skill-item"><div class="skill-name">KNN · SVD · ACP</div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Méthodes de Monte Carlo</div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Mathématiques</div>
+      <div class="skill-item"><div class="skill-name">Statistiques & Probabilités</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Optimisation</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Algèbre linéaire</div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Outils</div>
+      <div class="skill-item"><div class="skill-name">Linux · Git · LaTeX</div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Langues</div>
+      <div class="lang-item">
+        <span class="lang-name">Arabe</span>
+        <div class="lang-dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Français</span>
+        <div class="lang-dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Anglais</span>
+        <div class="lang-dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Espagnol</span>
+        <div class="lang-dots">
+          <div class="dot filled"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="left-section">
+      <div class="left-section-title">Centres d'intérêt</div>
+      <div class="interest-list">
+        <span class="interest-tag">Course à pied</span>
+        <span class="interest-tag">Musculation</span>
+        <span class="interest-tag">Littérature</span>
+        <span class="interest-tag">Cinéma</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DROITE -->
+  <div class="right">
+    <div class="right-section">
+      <div class="right-section-title">Profil</div>
+      <p class="summary-text">
+        Étudiant ingénieur de première année à <strong>l'ENSEEIHT Toulouse INP N7</strong>, spécialité Sciences du Numérique. 
+        Solide formation mathématique avec un <strong>classement 1er de promotion</strong> en classe préparatoire. 
+        Multilingue (arabe, français, anglais, espagnol en apprentissage), avec une expérience professionnelle en service client, enseignement et livraison. 
+        Calme et efficace sous pression, motivé à contribuer à des projets innovants.
+      </p>
+    </div>
+
+    <div class="right-section">
+      <div class="right-section-title">Formation</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Cycle ingénieur — Sciences du Numérique (SN)</div>
+          <div class="entry-date">Sep 2025 — En cours</div>
+        </div>
+        <div class="entry-org">ENSEEIHT, Toulouse INP N7 — Toulouse, France</div>
+        <ul class="entry-bullets">
+          <li>Mathématiques, informatique, algorithmique, électronique</li>
+          <li>Modules SHS : Marketing, Engagement RSE (CAM)</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">2e année — CPGE MP (Mathématiques & Physique)</div>
+          <div class="entry-date">Sep 2024 — Jul 2025</div>
+        </div>
+        <div class="entry-org">Lycée d'excellence Mohammed VI — Casablanca, Maroc · Classes MP Étoiles</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">1re année — CPGE MP (Mathématiques & Physique)</div>
+          <div class="entry-date">Sep 2023 — Jun 2024</div>
+        </div>
+        <div class="entry-org">Lycée Salmane el Farissi — Maroc</div>
+        <div class="entry-badge">🏆 1er de promotion</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Baccalauréat — Mathématiques</div>
+          <div class="entry-date">Jun 2023</div>
+        </div>
+        <div class="entry-org">Lycée Moulay Youssef — Maroc</div>
+        <div class="entry-badge">Mention Bien</div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="right-section-title">Expériences professionnelles</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Caissier</div>
+          <div class="entry-date">Juil — Août 2025</div>
+        </div>
+        <div class="entry-org">Marjane — Rabat, Maroc</div>
+        <ul class="entry-bullets">
+          <li>Accueil client chaleureux et gestion des transactions en caisse</li>
+          <li>Traitement des retours et échanges avec rigueur</li>
+          <li>Service rapide et efficace dans un environnement dynamique</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Livreur</div>
+          <div class="entry-date">Sep 2024 — Fév 2025</div>
+        </div>
+        <div class="entry-org">Taco Bell — Casablanca, Maroc</div>
+        <ul class="entry-bullets">
+          <li>Réalisation des missions dans des délais serrés avec précision</li>
+          <li>Apprentissage rapide des procédures opérationnelles</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Enseignant particulier en mathématiques</div>
+          <div class="entry-date">Août 2023 — Fév 2024</div>
+        </div>
+        <div class="entry-org">Indépendant — Rabat, Maroc</div>
+        <ul class="entry-bullets">
+          <li>Accompagnement d'élèves du secondaire en mathématiques</li>
+          <li>Amélioration des résultats grâce à des explications claires et patientes</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Aide en boutique familiale</div>
+          <div class="entry-date">Jun — Sep 2022</div>
+        </div>
+        <div class="entry-org">Famille — Rabat, Maroc</div>
+        <ul class="entry-bullets">
+          <li>Gestion de la caisse et relation clientèle</li>
+          <li>Développement de compétences en gestion commerciale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
